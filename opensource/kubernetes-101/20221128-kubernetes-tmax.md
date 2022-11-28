@@ -263,9 +263,11 @@ nf_conntrack_ipv4(rhel 8/9(x))
 -----------------
 POD/SVC에서 발생한 연결(connection) 추적
 
+# vi /etc/sysctl.d/99-k8s.conf
 net.bridge.bridge-nf-call-iptables  = 1
 net.ipv4.ip_forward                 = 1
 net.bridge.bridge-nf-call-ip6tables = 1
+# sysctl --system -p
 ```
 
 
