@@ -5,6 +5,8 @@
 
 node 가 not ready 뜨는 경우 kubectl describe node <node1> 을 통해서 문제를 확인한다. cni not init 같은 문제이면
 https://github.com/flannel-io/flannel/blob/master/Documentation/kube-flannel.yml  을 kubectl 로 실행시킨다.
+kubeadm rest 을 할거면 rm -f /etc/cni/net.d/*flannel* 으로 설정되었던 flannel cni 를 지워줘야한다.
+
 ```
 
 
