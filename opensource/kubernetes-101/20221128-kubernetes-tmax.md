@@ -186,7 +186,7 @@ backingFsBlockDev:
 
 
 쿠버네티스 공식 설치 가이드 문서
-https://kubernetes.io/ko/docs/setup/production-environment/tools/kubeadm/install-kubeadm/
+(https://kubernetes.io/ko/docs/setup/production-environment/tools/kubeadm/install-kubeadm/, 설치가이드)
 
 
 ### 조건사항
@@ -280,6 +280,23 @@ kubelet을 쓰러면
 # mkdir -p ~/.kube/
 # cp /etc/kubernetes/admin.conf ~/.kube/config
 ```
+
+7. 노드 상태 확인하기
+
+
+**이 작업은 마스터 서버에서 해주시면 됩니다**
+**SELinux가 켜져 있는 경우 'setenforce 0'으로 꺼주세요**
+```
+mkdir -p ~/.kube/
+cp /etc/kubernetes/admin.conf ~/.kube/config
+kubectl get nodes
+kubectl get pods -A
+
+```
+
+8. 네트워크 추가하기
+
+(https://projectcalico.docs.tigera.io/getting-started/kubernetes/quickstart)
 
 
 
