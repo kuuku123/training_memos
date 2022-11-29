@@ -267,7 +267,7 @@ ip_vs_sh
 ip_vs
 nf_conntrack_ipv4(rhel 8/9(x))
 # dracut -f 
-# modprobe overlay  처럼 위에꺼 한번씩 modprobe으로 켜줘야함
+# modprobe overlay  처럼 위에꺼 한번씩 modprobe으로 켜줘야함 (modeprobe $(cat 99-k8s-modules.conf) 명령어를 치면 순차적으로 실행해줌)
 -----------------
 POD/SVC에서 발생한 연결(connection) 추적
 
