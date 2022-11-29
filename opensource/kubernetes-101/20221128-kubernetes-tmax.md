@@ -420,7 +420,7 @@ yum install cri-o -y
 systemctl enable --now cri-o
                                                                                                       eth1
                                                                                                   -------------
-kubeadm init --control-plane-endpoint 192.168.89.87  --upload-certs --apiserver-advertise-address=192.168.90.87
+kubeadm init --control-plane-endpoint 192.168.90.87  --upload-certs --apiserver-advertise-address=192.168.90.87
 
 
 ```
