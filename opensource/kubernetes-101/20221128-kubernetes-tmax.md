@@ -276,9 +276,10 @@ net.bridge.bridge-nf-call-iptables  = 1
 net.ipv4.ip_forward                 = 1
 net.bridge.bridge-nf-call-ip6tables = 1
 # sysctl --system -p
-kubelet을 쓰러면
+kubelet을 쓰러면 (kubeadm reset을 했을 경우에도 cp 부터 다시해줘야함)
 # mkdir -p ~/.kube/
 # cp /etc/kubernetes/admin.conf ~/.kube/config
+
 ```
 
 7. 노드 상태 확인하기
