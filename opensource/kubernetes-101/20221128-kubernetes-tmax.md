@@ -373,6 +373,7 @@ kubeadm init --control-plane-endpoint 172.31.137.87  --upload-certs
                                       \
                                        `---> 이 위치에 본래는 haproxy서버 정보가 들어감.
                                              우리 랩에서는 haproxy가 없기에 첫번째 서버가 그 역할을 함. 
+                                             인증서또한 etcd에 업로드함 -> 나중에 다른 master node가 control plance access 할때 인증서를 다운로드가 가능하다.
 
 kubeadm init phase upload-certs --upload-certs
                    ---------------------------
