@@ -2,6 +2,9 @@
 ```
 /etc/resolv.conf 를 확인해서 nameserver 8.8.8.8 을 추가해줘야함 
 나같은 경우에는 kubeadm join을 한후에 master에서 get pods -A 를 했을시에 worker node 의 kube proxy가 뜨지 않았음 image를 repo에서 가져오지 못하는 문제였음
+
+node 가 not ready 뜨는 경우 kubectl describe node <node1> 을 통해서 문제를 확인한다. cni not init 같은 문제이면
+https://github.com/flannel-io/flannel/blob/master/Documentation/kube-flannel.yml  을 kubectl 로 실행시킨다.
 ```
 
 
