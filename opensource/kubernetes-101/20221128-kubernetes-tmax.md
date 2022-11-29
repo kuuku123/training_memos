@@ -362,6 +362,8 @@ Masters 3~4대가 준비가 되야 됨. +2
 Master Node : kubeadm reset --force              
 Compute Node: kubeadm reset --force
 
+왜 3대인가? = core sync 가 3대이상부터 동작을 한다.
+
 ### 멀티 마스터 명령어 정리
 
 ```
